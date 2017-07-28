@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connections Sentimenter</title>
+  <link type="text/css" rel="stylesheet" href="/css/styles.css"/>
+  <link type="text/css" rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"></link>
+  <link rel="shortcut icon" href="/images/favicon.png" />
+</head>
+<body>
+	<div id="errorMessage"></div>
+  <div id="getResultsWrapper">
+    <button class="bigButton" onclick="getResults();">Click here to see results from Connections</button>
+  	<div id="pleaseWait"></div>
+    <table class="table table-bordered display" id="resultsTable">
+      <!-- tbody will be inserted by JavaScript -->
+    </table>
+</div>
+
+<div id="saveCSVWrapper" style="display:none;">
+  <form action="/makeCSV" method="GET">
+    <input type="submit" class="bigButton" value="Click here to download this table as a CSV file">
+  </form>
+</div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.loadmask.min.js"></script>
+  <script type='text/javascript' src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="/js/date.format.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
